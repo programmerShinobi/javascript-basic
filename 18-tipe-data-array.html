@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe Data Array</title>
+</head>
+<body>
+    <script>
+        // Deklarasi dan isi variable
+        let arrayKosong = [];
+        let arrayNama = ["Faqih", "Pratama", "Muhti"];
+
+        const names = [];
+        names.push("Faqih", "Pratama"); // Menambahkan data array "Faqih", "Pratama"
+        names.push("Muhti"); // Menambahkan data array "Muhti"
+        
+        // Tampilkan hasil variable pada halaman browser
+        document.writeln(`<p>${arrayKosong}</p>`);
+        document.writeln(`<p>${arrayNama[0]}</p>`);
+        document.writeln(`<p>${arrayNama[1]}</p>`);
+        document.writeln(`<p>${arrayNama[2]}</p>`);
+        document.writeln(`<p>${arrayNama}</p>`);
+        
+        // Tampilkan hasil variable pada console
+        console.table(names);
+        console.info(names[0]);
+        console.info(names[1]);
+        console.info(names[2]);
+        
+        names[0] = "Programmer"; // Mengubah data array ke- 0
+        names[1] = "Shinobi"; // Mengubah data array ke- 1
+        
+        delete names[2]; // Menghapus data array ke- 2
+
+        names.push(["Faqih", "Pratama", "Muhti"]); // Mengubah data array menjadi multi dimensi (array 2 dimensi)
+        names[3].push(["Fans", "Coding"]); // Mengubah data array menjadi 3 dimensi
+        names[3].push(["HTML", "CSS", "JS", "PHP"]); // Mengubah data array menjadi 3 dimensi
+        console.table(names);
+        console.info(names[0]);
+        console.info(names[1]);
+        console.info(names[2]); // undefined : deleted
+        
+    </script>
+</body>
+</html

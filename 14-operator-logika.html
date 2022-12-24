@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator Logika</title>
+</head>
+<body>
+    <script>
+        // Deklarasi variable
+        let nilaiUjian;
+        let nilaiAbsensi;
+        let lulusUjian = nilaiUjian;
+        let lulusAbsensi = nilaiAbsensi;
+        let lulus;
+
+        // Isi variable dengan operator aritmatika
+        nilaiUjian = 76;
+        nilaiAbsensi = 75;
+
+        lulusUjian = nilaiUjian > 75;
+        lulusAbsensi = nilaiAbsensi > 75;
+        
+        // Isi variable dengan operator logika && : AND
+        remidial = lulusUjian && lulusAbsensi;
+        
+        // Isi variable dengan operator logika || : OR
+        lulus = lulusUjian || lulusAbsensi;
+
+        // Isi variabel dengan operator unary ! : NOT
+        tidakPeringkatLimaBesar = !remidial;
+
+        // Menampilkan variable
+        document.writeln("<p>"+ " ("+ nilaiUjian + ") " + lulusUjian + " || " + "(" + nilaiAbsensi + ") " + lulusAbsensi + " : " + remidial + " (REMIDIAL)</p>");
+        document.writeln("<p>"+ " ("+ nilaiUjian + ") " + lulusUjian + " && " + "(" + nilaiAbsensi + ") " + lulusAbsensi + " : " + lulus + " (LULUS)</p>");
+        document.writeln("<p>!"+ remidial + " : " + tidakPeringkatLimaBesar + " (Kemungkinan Tidak Peringkat 5 Besar)</p>")
+
+    </script>
+</body>
+</html>

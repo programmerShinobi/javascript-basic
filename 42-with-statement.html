@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>With Statement</title>
+</head>
+<body>
+    <script>
+
+        /**
+         * Penggunaan With Statement
+         * Tidak direkomendasikan karena membuat code menjadi ambigu
+        */
+        const person = {
+            firstName: "Faqih",
+            middleName: "Pratama",
+            lastName: "Muhti"
+        };
+
+        // Tanpa With Statement
+        console.info(person.firstName);
+        console.info(person.middleName);
+        console.info(person.lastName);
+
+        // With Statement
+        with (person) {
+            console.info(firstName);
+            console.info(middleName);
+            console.info(lastName);
+        }
+
+        // With Statement Ambigu
+        const firstName = "Programmer";
+        const lastName = "Shinobi"
+        with (person) {
+            console.info(firstName);
+            console.info(middleName);
+            console.info(lastName);
+        }
+
+    </script>
+</body>
+</html>

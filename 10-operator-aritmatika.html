@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator Aritmatika</title>
+</head>
+<body>
+    <script>
+        // Deklarasi variable
+        let result;
+        let originalResult;
+
+        // Isi variable
+        result = 1 + 2; // 1 + 2 = 3 | Penjumlahan
+        document.writeln("<p>1 + 2 = " + result + "</p>");
+        originalResult = result;
+
+        result = result - 1; // 3 - 1 = 2 | Pengurangan
+        document.writeln("<p>"+ originalResult + " - 1 = " + result + "</p>"); // Hasil dari kurang 1
+        originalResult = result;
+
+        result = result * 2; // 2 * 2 = 4 | Perkalian
+        document.writeln("<p>"+ originalResult + " * 2 = " + result +"</p>"); // Hasil dari kali 2
+        originalResult = result;
+
+        result = result ** 3; // 4 ** 3 = 64 | Perpangkatan
+        document.writeln("<p>"+ originalResult +" ** 3 = "+ result +"</p>"); // Hasil dari pangkat 3
+        originalResult = result;
+
+        result = result / 4; // 64 / 4 = 16 | Pembagian
+        document.writeln("<p>"+ originalResult + " / 4 = " + result +"</p>") // Hasil dari bagi 4
+        originalResult = result;
+
+        result = result % 5; // 16 % 5 = 1 | Sisa Hasil Pembagian (modular)
+        document.writeln("<p>"+ originalResult + " % 5 = " + result +"</p>") // Sisa hasil bagi 5
+
+    </script>
+</body>
+</html>

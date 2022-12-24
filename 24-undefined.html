@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undefined</title>
+</head>
+<body>
+    <script>
+        // Deklarasikan variable
+        let name;
+        const names = ["Faqih", "Pratama", "Muhti"];
+        const person = {};
+
+        // Tampilkan hasil variable
+        if(name === undefined && names[3] === undefined && person.name === undefined){
+            document.write("NAME : " + name + "</br>");
+            document.write("NAMES : " + names[3] + "</br>");
+            document.write("PERSON : " + person.name);
+            console.info("NAME : " + name);
+            console.info("NAMES : " + names[3]);
+            console.info("PERSON : " + person.name);
+            alert("NAME & NAMES & PERSON : undefined");
+        }else if(name === undefined && names[3] === undefined){
+            document.write("NAME : " + name + "</br>");
+            document.write("NAMES : " + names[3] + "</br>");
+            document.write("PERSON : " + person.name);
+            console.info("NAME : " + name);
+            console.info("NAMES : " + names[3]);
+            console.info("PERSON : " + person.name);
+            alert("NAME & NAMES & PERSON : undefined");
+        }else if(name === undefined && person.name === undefined){
+            document.write("NAME : " + name + "</br>");
+            document.write("NAMES : " + names[3] + "</br>");
+            document.write("PERSON : " + person.name);
+            console.info("NAME : " + name);
+            console.info("NAMES : " + names[3]);
+            console.info("PERSON : " + person.name);
+            alert("NAME & PERSON : undefined");
+        }else if(person.name === undefined && names[3] === undefined){
+            document.write("NAME : " + name + "</br>");
+            document.write("NAMES : " + names[3] + "</br>");
+            document.write("PERSON : " + person.name);
+            console.info("NAME : " + name);
+            console.info("NAMES : " + names[3]);
+            console.info("PERSON : " + person.name);
+            alert("NAMES & PERSON : undefined");
+        }else if(name === undefined){
+            document.write("NAME : " + name + "</br>");
+            document.write("NAMES : " + names[3] + "</br>");
+            document.write("PERSON : " + person.name);
+            console.info("NAME : " + name);
+            console.info("NAMES : " + names[3]);
+            console.info("PERSON : " + person.name);
+            alert("NAME : undefined");
+        }else if(names[3] === undefined){
+            document.write("NAME : " + name + "</br>");
+            document.write("NAMES : " + names[3] + "</br>");
+            document.write("PERSON : " + person.name);
+            console.info("NAME : " + name);
+            console.info("NAMES : " + names[3]);
+            console.info("PERSON : " + person.name);
+            alert("NAMES : undefined");
+        }else if(person.name === undefined){
+            document.write("NAME : " + name + "</br>");
+            document.write("NAMES : " + names[3] + "</br>");
+            document.write("PERSON : " + person.name);
+            console.info("NAME : " + name);
+            console.info("NAMES : " + names[3]);
+            console.info("PERSON : " + person.name);
+            alert("PERSON : undefined");
+        }else{
+            document.write("NAME : " + name + "</br>");
+            document.write("NAMES : " + names[3] + "</br>");
+            document.write("PERSON : " + person.name);
+            console.info("NAME : " + name);
+            console.info("NAMES : " + names[3]);
+            console.info("PERSON : " + person.name);
+            alert("NAME & NAMES & PERSON: defined");
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator Unary</title>
+</head>
+<body>
+    <script>
+        // Deklarasi variable
+        let result;
+        let originalResult;
+
+        // Isi variable
+        result = +1; // 1
+        document.writeln("<p>+1 =" + result + "</p>");
+        originalResult = result;
+
+        result--; // result = result - 1; result -= 1; 0
+        document.writeln("<p>"+ originalResult + "--  = " + result + "</p>");
+        originalResult = result;
+
+        result++; // result = +1; result += 1; 1
+        document.writeln("<p>"+ originalResult + "++  = " + result +"</p>");
+        originalResult = result;
+
+        result = -result; // -1
+        document.writeln("<p>-"+ originalResult+ " = "+ result +"</p>")
+
+    </script>
+</body>
+</html>

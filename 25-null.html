@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Null</title>
+</head>
+<body>
+    <script>
+        // Deklarasikan variable
+        let name = null;
+        const names = ["Faqih", "Pratama", "Muhti", null];
+        const person = {name:null};
+
+        // Tampilkan hasil variable
+        if(name === null && names[3] === null && person.name === null){
+            document.write("NAME : null </br>");
+            document.write("NAMES : null </br>");
+            document.write("PERSON : null </br>");
+            console.info("NAME : null");
+            console.info("NAMES : null");
+            console.info("PERSON : null");
+            alert("NAME & NAMES & PERSON : null");
+        }else if(name === null && names[3] === null){
+            document.write("NAME : null </br>");
+            document.write("NAMES : null </br>");
+            document.write("PERSON : " + person.name);
+            console.info("NAME : null");
+            console.info("NAMES : null");
+            console.info("PERSON : " + person.name);
+            alert("NAME & NAMES : null");
+        }else if(name === null && person.name === null){
+            document.write("NAME : null </br>");
+            document.write("NAMES : " + names[3] + "</br>");
+            document.write("PERSON : null </br>");
+            console.info("NAME : null");
+            console.info("NAMES : " + names[3]);
+            console.info("PERSON : null");
+            alert("NAME & PERSON : null");
+        }else if(person.name === null && names[3] === null){
+            document.write("NAME : " + name + "</br>");
+            document.write("NAMES : null</br>");
+            document.write("PERSON : null");
+            console.info("NAME : " + name);
+            console.info("NAMES : null");
+            console.info("PERSON : null");
+            alert("NAMES & PERSON : null");
+        }else if(name === null){
+            document.write("NAME : " + name + "</br>");
+            document.write("NAMES : " + names[3] + "</br>");
+            document.write("PERSON : " + person.name);
+            console.info("NAME : " + name);
+            console.info("NAMES : " + names[3]);
+            console.info("PERSON : " + person.name);
+            alert("NAME : null");
+        }else if(names[3] === null){
+            document.write("NAME : " + name + "</br>");
+            document.write("NAMES : " + names[3] + "</br>");
+            document.write("PERSON : " + person.name);
+            console.info("NAME : " + name);
+            console.info("NAMES : " + names[3]);
+            console.info("PERSON : " + person.name);
+            alert("NAMES : null");
+        }else if(person.name === null){
+            document.write("NAME : " + name + "</br>");
+            document.write("NAMES : " + names[3] + "</br>");
+            document.write("PERSON : " + person.name);
+            console.info("NAME : " + name);
+            console.info("NAMES : " + names[3]);
+            console.info("PERSON : " + person.name);
+            alert("PERSON : null");
+        }else{
+            document.write("NAME : " + name + "</br>");
+            document.write("NAMES : " + names[3] + "</br>");
+            document.write("PERSON : " + person.name);
+            console.info("NAME : " + name);
+            console.info("NAMES : " + names[3]);
+            console.info("PERSON : " + person.name);
+            alert("NAME & NAMES & PERSON : not null");
+        }
+
+    </script>
+</body>
+</html>

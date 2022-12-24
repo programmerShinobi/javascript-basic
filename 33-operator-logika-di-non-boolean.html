@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator Logika di Non Boolean</title>
+</head>
+<body>
+    <script>
+
+        /**
+         * Logika OR (||)
+         * Data truthy yang akan ditampilkan
+         * Jika ada beberapa data truthy, maka yang akan ditampikan data yang ada diawal 
+         * 
+        */
+        console.info("Hello" || ''); // hello
+        console.info("" || []); // []
+        console.info("" || {}); // {}
+        console.info([] || {}); // []
+        console.info("0" || "NOL") // 0 -> jika data truthy semua, maka yg ditampilkan data yg pertama
+        console.info(0 || "NOL") // NOL
+        console.info(null || "NULL") // NULL
+        console.info(undefined || "UNDEFINED") // UNDEFINED
+        console.info(false || 0); // 0 -> jika data falsy semua yg terakhir ditampilkan data yg terakhir
+        
+        /**
+         * Logika AND (&&)
+         * Data falsy yang akan ditampilkan
+         * Jika ada beberapa data truthy, maka yang akan ditampilkan data yang ada diakhir 
+        */
+        console.info("Hello" && ''); // ''
+        console.info("" && []); // ""
+        console.info("" && {}); // ""
+        console.info([] && {}); // {}
+        console.info("0" && "NOL") // NOL -> jika data truthy semua, maka yg ditampilkan data yg terakhir
+        console.info(0 && "NOL") // 0
+        console.info(null && "NULL") // null
+        console.info(undefined && "UNDEFINED") // undefined
+        console.info(false && 0); // false -> jika data falsy semua yg terakhir ditampilkan data yg pertama
+        
+        // Contoh Implementasi Dari Operator Logika di Non Boolean
+        const person = {
+            firstName : "Faqih",
+            middleName : "Pratama",
+            lastName : "Muhti"
+        };
+        const name = person.firstName || person.middleName || person.lastName
+        console.info(name);
+
+   </script>
+</body>
+</html>

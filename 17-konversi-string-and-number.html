@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koncersi String & Number</title>
+</head>
+<body>
+    <script>
+        // Deklarasi dan isi variable
+        const value1 = "1.6";
+        const value2 = 1;
+        const sumInt = parseInt(value1) + value2; // string to integer
+        const sumFloat = parseFloat(value1) + value2; // string to float
+        const sumNumber = Number(value1) + value2; // string to integer|float
+        const sumNumberToString = value1 + value2.toString(); // integer to string
+
+        // Tampilkan hasil dari variable
+        document.writeln(`<p>${sumInt}</p>`);
+        document.writeln(`<p>${sumFloat}</p>`);
+        document.writeln(`<p>${sumNumber}</p>`);
+        document.writeln(`<p>${sumNumberToString}</p>`);
+
+        document.writeln(`<p>${parseInt("salah")}</p>`); // NaN
+        document.writeln(`<p>${parseFloat("1.1text")}</p>`); // 1.1
+
+        // Number() tidak akan mentolelir kesalahan pada data
+        document.writeln(`<p>${Number("1.1ups")}</p>`); // NaN
+        document.writeln(`<p>${Number("1x")}</p>`); // NaN
+        document.writeln(`<p>${Number("bukan number")}</p>`) // Nan
+
+        const first = Number("salah"); // NaN
+        const totalNumber = first + 100;
+        document.writeln(`<p> .. ${totalNumber}</p>`); // NaN
+        document.writeln(`<p> ... ${isNaN(first)}</p>`); // NaN
+        document.writeln(`<p> ... ${isNaN(100)}</p>`); // NaN
+        document.writeln(`<p> ... ${isNaN(NaN)}</p>`); // NaN
+
+
+    </script>
+</body>
+</html>

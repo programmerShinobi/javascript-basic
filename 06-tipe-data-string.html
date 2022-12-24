@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe Data String</title>
+</head>
+<body>
+    <script>
+        /**
+         * Penggunaan kutip harus konsisten
+         * Kalau kutip satu('') kutip satu semua sintaksnya
+         * Atau kutip dua ("") kutip dua semua sintaksnya
+         *
+        */
+        document.writeln("<h1>Programmer Shinobi</h1>");
+        document.writeln('<p>Faqih Pratama Muhti</p>');
+        document.writeln("<hr>");
+
+        /**
+         * Menggabungkan string
+         * dengan menggunakan simbol plus `+`
+         * 
+        */
+        document.writeln("Nama&emsp;: " + "FaQih");
+        document.writeln("</br>");
+        document.writeln("Job&emsp;&emsp;: " + "Programmer");
+        document.writeln("<hr>");
+        document.writeln("</br>");
+
+        /**
+         * Penggunaan escape sequence
+         * \n   : baris baru
+         * \t   : tab 
+         * \\   : simbol \
+         * \"   : simbol "
+         * \'   : simbol '
+         * "Syarat harus menggunakan textarea"
+         * 
+        */
+        document.writeln("<textarea cols='100' rows='6'>");
+            document.write("Faqih \nPratama \nMuhti\n");    // implementasi new line
+            document.write("\\Home\\Shinobi\n");            // implementasi slash
+            document.write("\"Programmer Shinobi\"\n");     // implementasi kutip dua
+            document.write("\'Belajar JavaScript\'");     // implementasi kutip satu
+        document.writeln("</textarea>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Template</title>
+</head>
+<body>
+    <script>
+        /**
+         * Penggunanan String Template
+         * Menggunakan Simbol Backtick `
+         * 
+        */
+        // Deklarasi dan isi variable
+        const firstName = "Faqih";
+        const middleName = "Pratama";
+        const lastName = "Muhti"
+        const fullName = `${firstName} ${middleName} ${lastName}`;
+        const value = 3.85;
+        const job = "Programmer";
+
+        const template = 
+            `Name : ${fullName} | Job : ${job} | GPA : ${value} (${value >= 2.50})`;
+        
+        const multiline = `Nama saya FaQih,
+Sekarang fokus belajar,
+Sering juga buat project coding,
+Kalau lagi males paling nonton anime (naruto/boruto)
+        `;
+        
+        // Menampilkan hasil variable pada halaman browser
+        document.writeln(template);
+        document.writeln("<pre>");
+            document.writeln(multiline);
+        document.writeln("</pre>");
+
+        // Menampilkan hasil variable pada console
+        console.info(template);
+        console.info(multiline);
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Of</title>
+</head>
+<body>
+    <script>
+
+        /**
+         * For Of Array
+        */
+        const names = [
+            "Faqih",
+            "Pratama",
+            "Muhti"
+        ];
+        for (const name of names) {
+            document.writeln(`<p>${name}</p>`);
+        }
+
+        /**
+         * For of String
+        */
+        const fullName = "Faqih Pratama Muhti";
+        for(const character of fullName) {
+            document.writeln(`<p>${character}</p>`);
+        }
+
+    </script>
+</body>
+</html>
